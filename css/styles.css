@@ -35,10 +35,10 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
-.download button {
+.download-button {
   margin: 3% 5% 5% 0;
 }
 
@@ -85,9 +85,14 @@ p {
   font-weight: bold;
 }
 
+.social-icons{
+  margin: 20px 10px;
+}
+
 .title-image {
-  width: 60%;
+  margin: auto auto -12rem 50px;
   transform: rotate(25deg);
+  width: 60%;
 }
 
 /*Pseudo Class Selectors*/
@@ -98,8 +103,24 @@ p {
 
 /*ID Selectors*/
 
-#features {
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  font-family: "Montserrat";
   padding: 7% 15%;
+  text-align: center;
+}
+
+#features {
+  background-color: white;
+  padding: 7% 15%;
+  position: relative;
+}
+
+#footer {
+  background-color: white;
+  padding: 7% 15%;
+  text-align: center;
 }
 
 #press {
@@ -125,4 +146,13 @@ p {
   color: #fff;
 }
 
-
+/*Media Query Selectors*/
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
